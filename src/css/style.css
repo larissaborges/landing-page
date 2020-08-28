@@ -206,3 +206,46 @@ text-transform: uppercase;
     margin: 0 auto;
     opacity: 10px;
 }
+.texto-sobre{
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+    font-size: 15px;
+    font-weight: 300;
+    color: #111;
+    line-height: 30px;
+    align-self: center;
+}
+.img-sobre img{
+    width: 100%;
+}
+.footer{
+    padding: 0px !important;
+    margin: 40px 0px 40px 0px;
+}
+.footer ul{
+    font-family: 'Poppins', sans-serif;
+    text-align-last: left; 
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+}
+.footer ul li{
+    list-style: none;
+    text-align: start;
+    margin: 20px 0px 20px 0px;
+}
+.copy{
+    background-color: #361e00;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    padding: 10px;
+}
+.copy a{
+color: white;
+}
+.icones-rs img{
+    cursor: pointer;
+    height: 20px; padding-left: 40px;
+}
