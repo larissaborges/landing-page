@@ -119,9 +119,12 @@ margin-bottom: 20px;
 .card-cafe img{
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgb(102, 102, 102);
+    max-width: 100%;
 }
 .nome-cafe{
 text-align: -webkit-center;
+margin-bottom: 30px;
+
 }
 .nome-cafe div{
     font-family: 'Poppins', sans-serif;
@@ -168,7 +171,7 @@ text-transform: uppercase;
    margin-bottom: 50px;
 }
 .depoimentos img{
-    width: 50%;
+    width: auto;
     border-radius: 50%;
     box-shadow:  -10px 10px 30px #754100;
     margin-bottom: 40px;
@@ -216,7 +219,7 @@ text-transform: uppercase;
     align-self: center;
 }
 .img-sobre img{
-    width: 100%;
+    width: auto;
 }
 .footer{
     padding: 0px !important;
@@ -247,5 +250,47 @@ color: white;
 }
 .icones-rs img{
     cursor: pointer;
-    height: 20px; padding-left: 40px;
+    height: 20px; 
+    padding-left: 20px;
+}
+
+/* media queries */
+
+@media(max-width: 413px){
+    .titulo-banner{
+        font-size: 60px;
+    }
+   
+}
+@media(max-width: 768px){
+    .bg-banner{
+        background-position: right;
+    }
+    .row-2{
+        margin-top: 0px !important;
+    }
+    .depoimentos div{
+        margin-bottom: 40px;
+    }
+    .img-sobre {
+        margin-top: 50px;
+    }
+    .row-sobre{
+        margin-bottom: 80px !important;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .nome-cafe div{
+        width: 150px !important;
+    }
+    .depoimentos div{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+@media(max-width:1024px){
+    .parallax{
+        background-position: -500px;
+    }
+
 }
