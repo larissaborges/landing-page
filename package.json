@@ -20,10 +20,12 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "source-map-loader": "^1.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "@popperjs/core": "^2.4.4",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"

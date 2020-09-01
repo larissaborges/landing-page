@@ -5,37 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pina Café</title>
 </head>
 
 <body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">Pina Café</a></li>
+            <li class="item"><a href="#cafes">Cafés</a></li>
+            <li class="item"><a href="#delicias">Delícias </a></li>
+            <li class="item"><a href="#depoimentos">Depoimentos </a></li>
+            <li class="item"><a href="#sobre">Sobre nós </a></li>
+            <li class="toggle"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
     <div class="container-fluid bg-banner">
         <div class="layer-banner">
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">Pina Café</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
 
-                        <div class="collapse navbar-collapse items" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Cafés</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Comidinhas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sobre nós</a>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
         </div>
         <div class="titulo-banner">PINA CAFÉ</div>
         <div class="frase-banner">feito com amor, feito para você!</div>
@@ -72,7 +59,7 @@
         </div>
     </section>
     <section class="container-fluid">
-        <div class="cafes-menu">
+        <div class="cafes-menu" id="cafes">
             <h1>Nossos Produtos</h1>
             <p>Nós nos preocupamos em servir o melhor para você!</p>
         </div>
@@ -119,7 +106,7 @@
     </section>
     <div class="parallax">
         <div class="container">
-            <div class="row">
+            <div class="row" id="delicias">
                 <span class="text-center">Confira nossas delícias para tornar sua<br> experiência ainda mais
                     saborosa</span>
             </div>
@@ -146,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="linha-divisao"></div>
+        <div class="linha-divisao" id="depoimentos"></div>
     </section>
     <section class="container-fluid">
         <div class="text-center titulo-depoimentos">Depoimentos</div>
@@ -156,23 +143,26 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ducimus culpa reprehenderit!
                     Optio illum molestias.</p>
                 <span><strong>Bryan</strong></span>
+                <div style="color: rgb(255, 230, 0); font-size: 20px;"> ★ ★ ★ ★ ★</div>
             </div>
             <div class="col-md-3">
                 <img class="img-fluid" src="./assets/img/2depo.webp" alt="">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ducimus culpa reprehenderit!
                     Optio illum molestias.</p>
                 <span><strong>Luciana</strong></span>
+                <div style="color: rgb(255, 230, 0); font-size: 20px;"> ★ ★ ★ ★ ★</div>
             </div>
             <div class="col-md-3">
                 <img class="img-fluid" src="./assets/img/3depo.webp" alt="">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ducimus culpa reprehenderit!
                     Optio illum molestias.</p>
                 <span><strong>Michelle</strong></span>
+                <div style="color: rgb(255, 230, 0); font-size: 20px;"> ★ ★ ★ ★ ★</div>
             </div>
         </div>
         <div class="linha-divisao"></div>
     </section>
-    <div class="container-fluid">
+    <div class="container-fluid" id="sobre">
         <div class="text-center titulo-depoimentos">Sobre Nós</div>
         <div class="row justify-content-center row-sobre" style="margin-bottom: 150px;">
             <div class="col-lg-5 texto-sobre">
@@ -220,6 +210,26 @@
     <div class="copy container-fluid text-center">2020 Copyright | feito por <a href="https://github.com/larissaborges"
             target="_blank">github.com/larissaborges</a></div>
     <script src="./bundle.js"></script>
+    <script>
+
+        const toggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu');
+
+        function toggleMenu() {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                toggle.querySelector('a').innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>'
+            } else {
+                menu.classList.add("active");
+                toggle.querySelector('a').innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>'
+
+            }
+        }
+
+        toggle.addEventListener('click', toggleMenu, false);
+
+
+    </script>
 </body>
 
 </html>
