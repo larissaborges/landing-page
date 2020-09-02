@@ -1,7 +1,7 @@
 {
   "name": "pina-cafe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pina Café's landing page made for practice my web design/front-end skills.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
@@ -30,5 +30,13 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larissaborges/landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/larissaborges/landing-page/issues"
+  },
+  "homepage": "https://github.com/larissaborges/landing-page#readme"
 }
