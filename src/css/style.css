@@ -21,7 +21,7 @@
 nav{
     font-family: 'Poppins', sans-serif;
     background: rgb(219, 211, 200);;
-    padding: 0 10px;
+    padding: 20px 10px;
 }
 
 a{
@@ -42,7 +42,7 @@ a{
 }
 
 .logo a{
-    font-size: 20px;
+    font-size: 30px;
     color: #111;
     text-decoration: none !important;
 }
@@ -359,9 +359,9 @@ color: white;
     }
 }
 @media(max-width:1024px){
-    .parallax{
-        background-position: -500px;
-    }
+    /* #delicias {
+        margin-left: 100px;
+    } */
 
 }
 @media(min-width:1900px){
