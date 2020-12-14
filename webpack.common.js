@@ -1,9 +1,9 @@
 const path = require('path');
-//const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/app.js',
-   // plugins: [new MiniCssExtractPlugin()],
+    // plugins: [new MiniCssExtractPlugin()],
     module: {
         rules: [
             {
