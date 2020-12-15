@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap);
 .bg-banner{
-    background: url(ab7fe823b63eb337f1b548b8e6155baa.jpg);
+    background-image: url(ab7fe823b63eb337f1b548b8e6155baa.jpg);
     position: relative;
     background-size: cover;
     height: 500px;

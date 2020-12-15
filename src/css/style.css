@@ -2,7 +2,7 @@
 
 
 .bg-banner{
-    background: url('/dist/assets/img/img-banner.jpg');
+    background-image: url('../assets/img/img-banner.jpg');
     position: relative;
     background-size: cover;
     height: 500px;
@@ -206,7 +206,7 @@ margin-bottom: 30px;
   padding-top: 15px;
 }
 .parallax{
-    background-image: url('/dist/assets/img/doces.jpg');
+    background-image: url('../assets/img/doces.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
