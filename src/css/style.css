@@ -2,7 +2,7 @@
 
 
 .bg-banner{
-    background: url('/dist/assets/img/2728108.jpg');
+    background: url('/dist/assets/img/img-banner.jpg');
     position: relative;
     background-size: cover;
     height: 500px;
@@ -25,7 +25,7 @@ nav{
 }
 
 a{
-    color: #111;
+    color: #111 !important;
     text-decoration: none !important;
     font-size: 15px;
 
@@ -165,7 +165,7 @@ width: 40px;
 margin-bottom: 20px;
 }
 .img-cafe {
-     align-self: center;
+     text-align: center;
 }
 .cafes-menu h1{
     font-family: 'Poppins', sans-serif;
@@ -206,7 +206,7 @@ margin-bottom: 30px;
   padding-top: 15px;
 }
 .parallax{
-    background-image: url('/dist/assets/img/484340-PGQVLN-114.jpg');
+    background-image: url('/dist/assets/img/doces.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,6 +279,10 @@ text-transform: uppercase;
     margin: 0 auto;
     opacity: 10px;
 }
+.row-sobre {
+    margin: 50px auto !important;
+    max-width: 1000px;
+}
 .texto-sobre{
     font-family: 'Poppins', sans-serif;
     text-align: center; 
@@ -306,6 +310,7 @@ text-transform: uppercase;
     list-style: none;
     text-align: start;
     margin: 20px 0px 20px 0px;
+    color: white;
 }
 .copy{
     background-color: #361e00;
@@ -316,14 +321,20 @@ text-transform: uppercase;
     padding: 10px;
 }
 .copy a{
-color: white;
+color: white !important;
+transition: all 0.2s;
+}
+.copy a:hover{
+    color: rgb(165, 159, 159) !important;
 }
 .icones-rs img{
     cursor: pointer;
     height: 20px; 
     padding-left: 20px;
 }
-
+footer{
+    background-color: #754100;
+}
 /* media queries */
 
 @media(max-width: 413px){
