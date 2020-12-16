@@ -166,6 +166,7 @@ margin-bottom: 20px;
 }
 .img-cafe {
      text-align: center;
+     align-self: center;
 }
 .cafes-menu h1{
     font-family: 'Poppins', sans-serif;
